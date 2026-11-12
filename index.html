@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#faf4e9">
+  <title>LitBuy spreadsheet guide | Product Links, Sizing &amp; QC</title>
+  <meta name="description" content="Use a LitBuy spreadsheet to find product links, compare seller size charts, review QC photos and estimate shipping before placing an order.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="LitBuy spreadsheet guide | Product Links, Sizing &amp; QC">
+  <meta property="og:description" content="Browse ten categories and learn how to check the original listing, fit, warehouse photos and shipping costs.">
+  <meta name="twitter:card" content="summary">
+  <!-- index.html
+  Secondary terms: LitBuy product links; LitBuy finds; LitBuy QC photos; LitBuy shopping guide; LitBuy shipping estimate.
+  Research sample: rep.tools, litbuyex.com, litbuysheetlinks.com, litbuy.asia, litbuyspreadsheet.page, litbuysheetx.com, litbuybestspreadsheet.com, litbuyspreadsheet.eu, lispreadsheet.com, thelitbuyspreadsheets.com. Direct Google results were inaccessible, so Google page-one positions were unverified.
+  -->
+  <style>
+    :root{color-scheme:light;--paper:#faf4e9;--white:#fffdf8;--ink:#211827;--muted:#5b4e60;--plum:#42274e;--line:#d8c9d8;--lime:#e7edb7}
+    *,*::before,*::after{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.6 system-ui,sans-serif}
+    a{color:var(--plum);text-underline-offset:.22em}
+    :focus-visible{outline:3px solid #834780;outline-offset:4px}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    header{border-bottom:1px solid var(--line)}
+    header .wrap{display:flex;justify-content:space-between;align-items:center;gap:.75rem;flex-wrap:wrap;padding-block:.85rem}
+    .brand{font-weight:800;text-decoration:none}
+    .hero{display:grid;grid-template-columns:1.35fr 1fr;gap:clamp(1rem,4vw,3rem);align-items:center;padding-block:clamp(1.25rem,4vw,3rem)}
+    h1,h2,h3,p,figure{margin:0}
+    h1,h2,h3{line-height:1.12}
+    h1{font:700 clamp(2.65rem,7vw,5.8rem)/.98 Georgia,serif;letter-spacing:-.05em}
+    h2{font:700 clamp(1.85rem,3.8vw,2.8rem)/1.1 Georgia,serif}
+    h3{font-size:1.25rem}
+    p{margin-top:.7rem}
+    .hero p{max-width:52ch;color:var(--muted)}
+    img{display:block;width:100%;height:auto;aspect-ratio:4/3;object-fit:contain;background:white}
+    .hero img{aspect-ratio:8/5;border-radius:1rem}
+    figcaption{font-size:.88rem;color:var(--muted);margin-top:.35rem}
+    .categories{background:var(--lime);border-radius:1rem;padding:clamp(1rem,3vw,1.8rem)}
+    .categories ul,.gallery,.articles{display:grid;gap:.7rem}
+    .categories ul{list-style:none;padding:0;margin:1rem 0 0;grid-template-columns:repeat(5,minmax(0,1fr))}
+    .categories a{display:flex;align-items:center;justify-content:space-between;gap:.3rem;min-height:3.2rem;padding:.65rem;background:var(--white);border:1px solid #a1a874;border-radius:.5rem;font-weight:650;text-decoration:none;overflow-wrap:anywhere}
+    .categories a:hover{background:var(--plum);color:white}
+    .section{margin-block:clamp(2rem,5vw,4rem)}
+    .gallery,.articles{margin-top:1rem;grid-template-columns:repeat(4,minmax(0,1fr))}
+    .gallery img{border:1px solid var(--line);border-radius:.75rem}
+    .articles{grid-template-columns:repeat(2,minmax(0,1fr))}
+    article{background:var(--white);border:1px solid var(--line);border-radius:.8rem;padding:clamp(1rem,2.5vw,1.6rem)}
+    .faq{max-width:52rem}
+    details{border-bottom:1px solid var(--line);padding:.85rem 0}
+    summary{cursor:pointer;font-weight:700}
+    details p{margin-left:1.1rem}
+    footer{background:var(--plum);color:white;padding:1.6rem 0}
+    footer a{color:var(--lime)}
+    @media(max-width:54rem){.categories ul{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:39rem){.hero,.articles{grid-template-columns:1fr}.gallery,.categories ul{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "inLanguage": "en",
+    "mainEntity": [
+      {"@type":"Question","name":"What is a LitBuy spreadsheet?","acceptedAnswer":{"@type":"Answer","text":"A LitBuy spreadsheet is a shopping reference that organizes product finds and links. A row may show a category, image, variant or seller reference. Open the original listing to confirm current options before ordering."}},
+      {"@type":"Question","name":"What should I do if a product link is dead?","acceptedAnswer":{"@type":"Answer","text":"Look for the original marketplace listing or search for the exact model and variant. Compare the seller name and listing photos before saving a replacement link."}},
+      {"@type":"Question","name":"Can LitBuy QC photos prove authenticity?","acceptedAnswer":{"@type":"Answer","text":"No. Warehouse photos can help you check visible details, measurements and the selected variant. For authenticity, look for documented provenance and a seller that offers verifiable proof."}},
+      {"@type":"Question","name":"How do I estimate the total cost before ordering?","acceptedAnswer":{"@type":"Answer","text":"Add the item cost, domestic delivery, applicable service fees and international shipping. Check for taxes or duties at your destination and update your estimate when parcel weight and dimensions are available."}}
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/mupbc/">
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <a href="https://www.hipobuyfind.com">Browse the catalog</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <div>
+        <h1>LitBuy spreadsheet</h1>
+        <p>Find a category, open the original seller listing and check the variant before you shortlist it. Use this guide to compare product links, measurements, warehouse photos and shipping costs.</p>
+      </div>
+      <figure>
+        <img src="https://nikeclprod.vtexassets.com/arquivos/ids/160793-800-800/CW2288_111_A_PREM.jpg?v=637654399803530000" width="800" height="500" alt="White Nike Air Force 1 ’07 low-top sneaker in side view" loading="eager" fetchpriority="high">
+        <figcaption>Nike Air Force 1 ’07 · Footwear reference</figcaption>
+      </figure>
+    </div>
+
+    <nav class="categories" aria-labelledby="category-title">
+      <h2 id="category-title">Shop by category</h2>
+      <ul>
+        <li><a href="https://hipobuyfind.com/category-911-Shoes.html">Shoes <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-912-Hoodies%2FSweaters.html">Hoodies/Sweaters <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-913-T-Shirts.html">T-Shirts <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-914-Jackets.html">Jackets <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-915-Pants%2FShorts.html">Pants/Shorts <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-916-Headwear.html">Headwear <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-917-Sets.html">Sets <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-918-underwear%2Funderpants.html">Underwear/underpants <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-919-Jersey.html">Jersey <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://hipobuyfind.com/category-920-Accessories.html">Accessories <span aria-hidden="true">↗</span></a></li>
+      </ul>
+    </nav>
+
+    <section class="section" aria-labelledby="style-title">
+      <h2 id="style-title">Details worth comparing</h2>
+      <p>Use these editorial references to decide which measurements and close-ups to look for in a listing.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://www.louisvuitton.cn/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-%E7%89%9B%E4%BB%94%E5%A4%B9%E5%85%8B--FVJA29EFY610_PM2_Front%20view.jpg?wid=480" width="480" height="360" alt="Front view of a Louis Vuitton monogram denim jacket" loading="lazy" decoding="async">
+          <figcaption>Louis Vuitton jacket · Check shoulder width and sleeve length.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/HEXFBFBFB_South_0_160_640x640/1751298339/838745_3HBC4_2600_001_100_0000_Light.jpg" width="480" height="360" alt="Beige Gucci GG canvas baseball cap" loading="lazy" decoding="async">
+          <figcaption>Gucci cap · Check head circumference and closure type.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://shop.r10s.jp/watch-timezone/cabinet/item20250801/10586631-01.jpg" width="480" height="360" alt="Hermès Brides et Gris-Gris printed silk Twilly scarf" loading="lazy" decoding="async">
+          <figcaption>Hermès Twilly · Check scarf dimensions and fabric composition.</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/E0078MIDRSD301_SBG_E01-1?%24r9x10_raw%24=&amp;crop=0%2C0%2C4000%2C5000&amp;hei=520&amp;scale=1&amp;wid=480" width="480" height="360" alt="Dior Tribales earrings with white resin pearls and gold-finish metal" loading="lazy" decoding="async">
+          <figcaption>Dior Tribales · Check earring diameter, materials and fastenings.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="guide-title">
+      <h2 id="guide-title">LitBuy shopping guide</h2>
+      <div class="articles">
+        <article>
+          <h3>Trace LitBuy product links to the seller</h3>
+          <p>Open the original Weidian, Taobao or 1688 listing when available. Save the marketplace product ID, seller name, listing URL and date checked. When comparing LitBuy finds, confirm the color option, size variant and whether the listing shows a single item or a set.</p>
+          <p>If you use an agent link converter, compare the converted listing with the original. Check the product ID, photos and variant names before adding anything to your cart.</p>
+        </article>
+        <article>
+          <h3>Compare sizing in centimeters</h3>
+          <p>Start with the seller size chart and a garment you already own. For hoodies and jerseys, compare chest width and body length. For jackets, add shoulder width and sleeve length. For pants and shorts, check waist, rise and inseam.</p>
+          <p>For sneakers, compare your foot length with the seller’s sizing instructions. If the listing gives an insole measurement, confirm how it was taken before using it to choose a size.</p>
+        </article>
+        <article>
+          <h3>Read LitBuy QC photos against the listing</h3>
+          <p>Match the warehouse photos to your selected variant. Check the size label, color, stitching and visible marks. For shoes, ask for outsole and heel views if they are missing. For clothing, a flat measurement photo can help resolve a sizing mismatch.</p>
+          <p>Before approving shipment, check the return window, who pays domestic return shipping and how the agent handles a wrong item.</p>
+        </article>
+        <article>
+          <h3>Build a LitBuy shipping estimate</h3>
+          <p>Record the item price, domestic shipping and any service fee first. Compare parcel weight and box dimensions across available international routes. Some routes charge by volumetric weight, so a bulky shoebox can change the quote.</p>
+          <p>Use the destination country, postal code and currency when comparing quotes. Check whether the quoted total includes any destination taxes or duties.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section faq" aria-labelledby="faq-title">
+      <h2 id="faq-title">Frequently asked questions</h2>
+      <details open>
+        <summary>What is a LitBuy spreadsheet?</summary>
+        <p>A LitBuy spreadsheet is a shopping reference that organizes product finds and links. A row may show a category, image, variant or seller reference. Open the original listing to confirm current options before ordering.</p>
+      </details>
+      <details>
+        <summary>What should I do if a product link is dead?</summary>
+        <p>Look for the original marketplace listing or search for the exact model and variant. Compare the seller name and listing photos before saving a replacement link.</p>
+      </details>
+      <details>
+        <summary>Can LitBuy QC photos prove authenticity?</summary>
+        <p>No. Warehouse photos can help you check visible details, measurements and the selected variant. For authenticity, look for documented provenance and a seller that offers verifiable proof.</p>
+      </details>
+      <details>
+        <summary>How do I estimate the total cost before ordering?</summary>
+        <p>Add the item cost, domestic delivery, applicable service fees and international shipping. Check for taxes or duties at your destination and update your estimate when parcel weight and dimensions are available.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="https://www.hipobuyfind.com">hipobuyfind.com</a>
+      <p>Independent shopping guide. Brand images illustrate styles and details. Confirm availability and terms with the seller.</p>
+    </div>
+  </footer>
+</body>
+</html>
